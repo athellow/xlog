@@ -15,7 +15,7 @@
         "laravel/framework": "^8.12",
         "laravel/tinker": "^2.5",
         "michelf/php-markdown": "^1.9",
-        "michelf/php-smartypants": "^1.9"
+        "michelf/php-smartypants": "^1.8"
     },
     "require-dev": {
         "facade/ignition": "^2.5",
