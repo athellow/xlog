@@ -18,6 +18,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::middleware('throttle:60,1')->prefix('v1')->group(function() {
+Route::middleware('throttle:60,1')->prefix('v1')->group(function($router) {
     Route::get('/posts', 'Api\PostController@index');
+    Route::get('/post/{id}', 'Api\PostController@detail')->where(['id' => '[1-9]{1}[0-9]*']);
 });
