@@ -20,7 +20,7 @@ class Admin extends Authenticatable
     ];
 
     /**
-     * 发送密码重置通知
+     * 发送密码重置通知!
      *
      * @param  string  $token
      * @return void
